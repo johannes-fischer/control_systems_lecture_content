@@ -1,4 +1,11 @@
 # Julia notebooks for control systems lectures offered by MRT at KIT
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Dgmrt) **Grundlagen der Mess- und Regelungstechnik**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Dmcs) **Measurement and Control Systems**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Drtsys) **Regelungstechnik und Systemdynamik**
+
+## Overview
 
 This repository contains interactive Julia notebooks for the lectures 'Grundlagen der Mess- und Regelungstechnik', 'Measurement and Control Systems', and 'Regelungstechnik und Systemdynamik', offered by the Institute of Measurement and Control Systems at Karlsruhe Institute of Technology.
 
@@ -6,22 +13,21 @@ The environment setup is managed by a separated [base repository](https://github
 
 ## Usage
 
+The notebooks are Jupyter notebooks.
+You can find more information on how to navigate and use them [here](https://jupyterlab.readthedocs.io/en/stable/user/interface.html#).
+
 You can find the notebooks for the lectures in the corresponding branches:
 
-- gmrt: 'Grundlagen der Mess- und Regelungstechnik'
-- mcs: 'Measurement and Control Systems'
-- rtsys: 'Regelungstechnik und Systemdynamik'
+- gmrt branch: 'Grundlagen der Mess- und Regelungstechnik'
+- mcs branch: 'Measurement and Control Systems'
+- rtsys branch: 'Regelungstechnik und Systemdynamik'
 
 You can choose to run the notebooks online using binder or locally on your machine.
 
 ### Binder
 
 Using binder allows to run the notebooks online without having to set up anything on your computer.
-It can take some time until the environment is loaded, depending on how frequently this repository is used (the more it is used, the better is the availability). Just click on the link for your lecture and wait until the environment is loaded.
-
-- Grundlagen der Mess- und Regelungstechnik: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Dgmrt)
-- Measurement and Control Systems: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Dmcs)
-- Regelungstechnik und Systemdynamik: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KIT-MRT/control_systems_lecture_base/HEAD?urlpath=git-pull%3Frepo%3Dhttps%253A%252F%252Fgithub.com%252FKIT-MRT%252Fcontrol_systems_lecture_content%26urlpath%3Dlab%252Ftree%252Fcontrol_systems_lecture_content%252F%26branch%3Drtsys)
+It can take some time until the environment is loaded, depending on how frequently this repository is used (the more it is used, the better is the availability). Just click on the `launch binder` icon for your lecture at the top of the document and wait until the environment is loaded.
 
 ### Local machine
 
