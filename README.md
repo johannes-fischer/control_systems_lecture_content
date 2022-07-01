@@ -33,7 +33,6 @@ It can take some time until the environment is loaded, depending on how frequent
 
 Running the code on your local machine gives you more flexibility, and you don't have to wait until binder is ready to execute your code. The following instructions work for Ubuntu systems. On other operating systems, you might have to adapt them.
 
-Prerequisites:
 - Install Julia >= 1.7
   ```
   URL=https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.3-linux-x86_64.tar.gz
@@ -42,24 +41,30 @@ Prerequisites:
   tar -x -f /tmp/julia.tar.gz -C ~/julia-1.7.3 --strip-components 1
   ln -s ~/julia-1.7.3/bin/julia ~/bin/julia
   ```
+  - Alternatively download from [https://julialang.org/downloads/](https://julialang.org/downloads/)
 - Install Juypter lab
   ```
   pip3 install jupyterlab
   python3 -m pip install --upgrade webio_jupyter_extension
   ```
-
-Clone git repositories, install julia environment and run jupyter lab.
-Replace <BRANCH_NAME> with the branch corresponding to your lecture, i.e. gmrt, mcs, or rtsys.
-
-```
-git clone https://github.com/KIT-MRT/control_systems_lecture_base.git
-cd control_systems_lecture_base
-git clone https://github.com/KIT-MRT/control_systems_lecture_content.git
-cd control_systems_lecture_content
-git checkout <BRANCH_NAME> # gmrt, mcs, or rtsys
-julia --project=@. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
-julia --project=@. -e 'using IJulia; jupyterlab(dir=".")'
-```
+  - You can also skip this step, then `IJulia.jl` will install a Jupyter kernel via `Conda.jl` during instantiation of the Julia environment. In this case you still need to [add the `Conda.jl` package](https://pkgdocs.julialang.org/v1/managing-packages/) and install the webio jupyter extension as described [here](https://juliagizmos.github.io/WebIO.jl/latest/providers/ijulia/).
+- Clone git repositories
+  - Replace <BRANCH_NAME> with the branch corresponding to your lecture, i.e. gmrt, mcs, or rtsys
+  ```
+  git clone https://github.com/KIT-MRT/control_systems_lecture_base.git
+  cd control_systems_lecture_base
+  git clone https://github.com/KIT-MRT/control_systems_lecture_content.git
+  cd control_systems_lecture_content
+  git checkout <BRANCH_NAME> # gmrt, mcs, or rtsys
+  ```
+- Instantiate the Julia environment
+    ```
+    julia --project=@. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
+    ```
+- From the `control_systems_lecture_content` folder run Jupyter lab
+  ```
+  julia --project=@. -e 'using IJulia; jupyterlab(dir=".")'
+  ```
 
 ## Troubleshooting
 
