@@ -44,7 +44,8 @@ Prerequisites:
   ```
 - Install Juypter lab
   ```
-  pip install jupyterlab
+  pip3 install jupyterlab
+  python3 -m pip install --upgrade webio_jupyter_extension
   ```
 
 Clone git repositories, install julia environment and run jupyter lab.
